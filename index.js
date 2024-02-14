@@ -4,7 +4,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.send(`
-    <h1>hello world</h1> 
+    <h1 style='text-align:center;color:blue;'>welcom to our server!</h1> 
     `);
 });
 
