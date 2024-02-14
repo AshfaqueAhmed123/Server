@@ -17,6 +17,26 @@ app.get('/', (req, res) => {
     `);
 });
 
+app.get('/about',(req,res)=>{
+
+    res.send(`
+
+     <h1 style="text-align: center; color: blue;">this is our contact page</h1>
+    <div style="text-align: center;">
+        <div>
+            <span><b>conatc me:-</b></span>
+            <span>someoneexample123@gmail.com</span>
+        </div>
+        <div>
+            <span><b>contact me:-</b></span>
+            <span>+921274639874</span>
+        </div>
+    </div>
+    
+    `)
+    
+})
+
 const port = process.env.PORT || 3000; // Use environment variable or default port 3000
 
 app.listen(port, () => {
