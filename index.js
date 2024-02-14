@@ -5,7 +5,7 @@ const app = express();
 app.get('/', (req, res) => {
     res.send(`
      <h1 style="text-align: center;color:blue;">welcome to our server</h1>
-    <h2 style="text-align: center; color: red;">this server si created using Express JS</h2>
+    <h2 style="text-align: center; color: red;">this server is created using Express JS</h2>
     
     <p style="width: 80vw; margin: auto; text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Earum rerum facilis
