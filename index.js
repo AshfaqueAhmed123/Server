@@ -37,6 +37,22 @@ app.get('/contact',(req,res)=>{
     
 })
 
+// Define a route for /download
+app.get('/download', (req, res) => {
+  // Path to the file you want to download
+  const filePath = 'Document.txt';
+  
+  // Set the Content-Disposition header to force download
+  res.setHeader('Content-Disposition', 'attachment; filename=Document.txt');
+  
+  // Send the file for download
+  res.download(filePath);
+});
+
+
+
+
+
 const port = process.env.PORT || 3000; // Use environment variable or default port 3000
 
 app.listen(port, () => {
