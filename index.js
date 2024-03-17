@@ -50,7 +50,11 @@ app.get('/download', (req, res) => {
 });
 
 
+app.get('/info', (req,res)=>{
 
+    res.send('this is a server side application hoisted on the infinityfree.com for free.this application was a test for empowering the chat app.')
+    
+})
 
 
 const port = process.env.PORT || 3000; // Use environment variable or default port 3000
